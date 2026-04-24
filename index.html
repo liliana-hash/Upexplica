@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EnglishUp</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+
+  --primary:#A8E6CF;
+
+  --secondary:#FFD3B6;
+
+  --accent:#FFAAA5;
+
+  --dark:#2E2E2E;
+
+}
+
+body {
+
+  margin:0;
+
+  font-family:'Inter', sans-serif;
+
+  background:#FFF;
+
+  color:var(--dark);
+
+}
+
+.container {
+
+  max-width:1100px;
+
+  margin:auto;
+
+  padding:20px;
+
+}
+
+/* HERO */
+
+.hero {
+
+  background: linear-gradient(135deg, #A8E6CF, #DCEDC1);
+
+  padding:70px 20px;
+
+  border-radius:25px;
+
+  text-align:center;
+
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+
+}
+
+.logo {
+
+  font-family:'Playfair Display';
+
+  font-size:3rem;
+
+}
+
+.logo span { color:var(--accent); }
+
+.hero p {
+
+  margin:10px 0;
+
+  font-size:1.05rem;
+
+}
+
+.cta {
+
+  margin-top:20px;
+
+}
+
+.btn {
+
+  display:inline-block;
+
+  padding:12px 24px;
+
+  margin:6px;
+
+  border-radius:30px;
+
+  text-decoration:none;
+
+  font-weight:600;
+
+  transition:0.3s;
+
+}
+
+.btn-main {
+
+  background:white;
+
+  color:var(--dark);
+
+}
+
+.btn-main:hover {
+
+  transform:translateY(-2px);
+
+}
+
+.btn-alt {
+
+  background:var(--accent);
+
+  color:white;
+
+}
+
+/* SECTIONS */
+
+.section {
+
+  margin:70px 0;
+
+}
+
+.title {
+
+  text-align:center;
+
+  font-family:'Playfair Display';
+
+  font-size:2rem;
+
+  margin-bottom:30px;
+
+}
+
+/* GRID */
+
+.grid {
+
+  display:grid;
+
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+  gap:20px;
+
+}
+
+.card {
+
+  background:#FFF;
+
+  padding:25px;
+
+  border-radius:20px;
+
+  box-shadow:0 8px 25px rgba(0,0,0,0.05);
+
+  text-align:center;
+
+}
+
+/* ABOUT */
+
+.about {
+
+  max-width:800px;
+
+  margin:auto;
+
+  text-align:center;
+
+  line-height:1.8;
+
+}
+
+/* HIGHLIGHTS */
+
+.highlight {
+
+  background:var(--secondary);
+
+  padding:30px;
+
+  border-radius:20px;
+
+  text-align:center;
+
+}
+
+/* PRICES */
+
+.price {
+
+  font-size:2rem;
+
+  color:var(--accent);
+
+  font-weight:700;
+
+}
+
+/* CONTACT */
+
+.contact {
+
+  background:linear-gradient(135deg,#FFD3B6,#FFAAA5);
+
+  padding:50px;
+
+  border-radius:25px;
+
+  text-align:center;
+
+  color:white;
+
+}
+
+.contact .btn {
+
+  background:white;
+
+  color:#333;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- HERO -->
+
+<div class="hero">
+
+  <div class="logo">English<span>Up</span></div>
+
+  <p>Explicações de inglês personalizadas</p>
+
+  <p>Do 1.º ao 12.º ano · Preparação para exames</p>
+
+  <div class="cta">
+
+    <a class="btn btn-main" href="mailto:liliana.gv@hotmail.com">Marcar aula gratuita</a>
+
+    <a class="btn btn-alt" href="https://wa.me/351XXXXXXXXX">WhatsApp</a>
+
+  </div>
+
+</div>
+
+<!-- SOBRE -->
+
+<div class="section">
+
+  <div class="title">Sobre as aulas</div>
+
+  <div class="about">
+
+    Aulas de Inglês com métodos Cambridge, Português para Estrangeiros e Francês.<br><br>
+
+    Mais de 10 anos de experiência no ensino, incluindo trabalho em escolas na zona de Cascais.<br><br>
+
+    As aulas incluem gramática, escrita e expressão oral, com um plano adaptado a cada aluno.<br><br>
+
+    Sessões individuais ou em grupo, presenciais ou online.
+
+  </div>
+
+</div>
+
+<!-- DESTAQUE -->
+
+<div class="section">
+
+  <div class="highlight">
+
+    ✔ Aula experimental gratuita &nbsp;&nbsp; ✔ Horários flexíveis &nbsp;&nbsp; ✔ Acompanhamento personalizado
+
+  </div>
+
+</div>
+
+<!-- VANTAGENS -->
+
+<div class="section">
+
+  <div class="title">Vantagens</div>
+
+  <div class="grid">
+
+    <div class="card">
+
+      <strong>Todos os níveis</strong><br><br>
+
+      Ensino básico ao secundário
+
+    </div>
+
+    <div class="card">
+
+      <strong>Método eficaz</strong><br><br>
+
+      Foco em resultados reais
+
+    </div>
+
+    <div class="card">
+
+      <strong>Experiência</strong><br><br>
+
+      +10 anos a ensinar
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- PREÇOS -->
+
+<div class="section">
+
+  <div class="title">Preços</div>
+
+  <div class="grid">
+
+    <div class="card">1.º Ciclo<div class="price">10€</div></div>
+
+    <div class="card">2.º Ciclo<div class="price">14€</div></div>
+
+    <div class="card">3.º Ciclo<div class="price">15€</div></div>
+
+    <div class="card">Secundário<div class="price">20€</div></div>
+
+  </div>
+
+</div>
+
+<!-- CONTACTO -->
+
+<div class="section">
+
+  <div class="contact">
+
+    <h2>Fala comigo</h2>
+
+    <p>Resposta rápida · Primeira aula gratuita</p>
+
+    <a class="btn" href="mailto:liliana.gv@hotmail.com">Enviar email</a>
+
+  </div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
