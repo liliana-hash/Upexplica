@@ -1,377 +1,201 @@
 <!DOCTYPE html>
-
 <html lang="pt">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Upexplica</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-
-<style>
-
-:root {
-
-  --primary:#A8E6CF;
-
-  --secondary:#FFD3B6;
-
-  --accent:#FFAAA5;
-
-  --dark:#2E2E2E;
-
-}
-
-body {
-
-  margin:0;
-
-  font-family:'Inter', sans-serif;
-
-  background:#FFF;
-
-  color:var(--dark);
-
-}
-
-.container {
-
-  max-width:1300px;
-
-  margin:auto;
-
-  padding:110px20px;
-
-}
-
-/* HERO */
-
-.hero {
-
-  background: linear-gradient(135deg, #A8E6CF, #DCEDC1);
-
-  padding:70px 20px;
-
-  border-radius:25px;
-
-  text-align:center;
-
-  box-shadow:0 10px 30px rgba(0,0,0,0.05);
-
-}
-
-.logo {
-
-  font-family:'Playfair Display';
-
-  font-size:4.8rem;
-
-}
-
-.logo span { color:var(--accent); }
-
-.hero p {
-
-  margin:10px 0;
-
-  font-size:1.05rem;
-
-}
-
-.cta {
-
-  margin-top:20px;
-
-}
-
-.btn {
-
-  display:inline-block;
-
-  padding:12px 24px;
-
-  margin:6px;
-
-  border-radius:30px;
-
-  text-decoration:none;
-
-  font-weight:600;
-
-  transition:0.3s;
-
-}
-
-.btn-main {
-
-  background:white;
-
-  color:var(--dark);
-
-}
-
-.btn-main:hover {
-
-  transform:translateY(-2px);
-
-}
-
-.btn-alt {
-
-  background:var(--accent);
-
-  color:white;
-
-}
-
-/* SECTIONS */
-
-.section {
-
-  margin:70px 0;
-
-}
-
-.title {
-
-  text-align:center;
-
-  font-family:'Playfair Display';
-
-  font-size:2rem;
-
-  margin-bottom:30px;
-
-}
-
-/* GRID */
-
-.grid {
-
-  display:grid;
-
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-
-  gap:20px;
-
-}
-
-.card {
-
-  background:#FFF;
-
-  padding:25px;
-
-  border-radius:20px;
-
-  box-shadow:0 8px 25px rgba(0,0,0,0.05);
-
-  text-align:center;
-
-}
-
-/* ABOUT */
-
-.about {
-
-  max-width:800px;
-
-  margin:auto;
-
-  text-align:center;
-
-  line-height:1.8;
-
-}
-
-/* HIGHLIGHTS */
-
-.highlight {
-
-  background:var(--secondary);
-
-  padding:30px;
-
-  border-radius:20px;
-
-  text-align:center;
-
-}
-
-/* PRICES */
-
-.price {
-
-  font-size:2rem;
-
-  color:var(--accent);
-
-  font-weight:700;
-
-}
-
-/* CONTACT */
-
-.contact {
-
-  background:linear-gradient(135deg,#FFD3B6,#FFAAA5);
-
-  padding:50px;
-
-  border-radius:25px;
-
-  text-align:center;
-
-  color:white;
-
-}
-
-.contact .btn {
-
-  background:white;
-
-  color:#333;
-
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upexplica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #A8E6CF;
+            --secondary: #FFD3B6;
+            --accent: #FFAAA5;
+            --dark: #2E2E2E;
+        }
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: #FFF;
+            color: var(--dark);
+        }
+        .container {
+            max-width: 1300px;
+            margin: auto;
+            padding: 20px;
+        }
+        .hero {
+            background: linear-gradient(135deg, #A8E6CF, #DCEDC1);
+            padding: 110px 20px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .logo {
+            font-family: 'Playfair Display';
+            font-size: 4.2rem;
+        }
+        .logo span { color: var(--accent); }
+        .hero p {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+        .cta { margin-top: 20px; }
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            margin: 6px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .btn-main {
+            background: white;
+            color: var(--dark);
+        }
+        .btn-main:hover { transform: translateY(-2px); }
+        .btn-alt {
+            background: var(--accent);
+            color: white;
+        }
+        .section { margin: 70px 0; }
+        .title {
+            text-align: center;
+            font-family: 'Playfair Display';
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #FFF;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .about {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            line-height: 1.8;
+        }
+        .highlight {
+            background: var(--secondary);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .price {
+            font-size: 2rem;
+            color: var(--accent);
+            font-weight: 700;
+        }
+        .contact {
+            background: linear-gradient(135deg, #FFD3B6, #FFAAA5);
+            padding: 50px;
+            border-radius: 25px;
+            text-align: center;
+            color: white;
+        }
+        .contact .btn {
+            background: white;
+            color: #333;
+        }
+        /* ===== AJUSTE PARA A FOTO ===== */
+        .foto-placa {
+            max-width: 60%;
+            width: 350px;
+            margin: 20px auto;
+            display: block;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        @media (max-width: 700px) {
+            .container { padding: 10px; }
+            .hero { padding: 60px 15px; }
+            .logo { font-size: 3rem; }
+            .foto-placa { max-width: 80%; width: auto; }
+        }
+    </style>
 </head>
-
 <body>
-
 <div class="container">
-
-<!-- HERO -->
-
-<div class="hero">
-
-  <div class="logo">Upexplica</div>
-
-  <p>Explicações personalizadas</p>
-
-  <p>Do 1.º ao 12.º ano · Preparação Inglês para exames</p>
-
-  <div class="cta">
-
-    <a class="btn btn-main" href="mailto:liliana.gv@hotmail.com">Marcar aula gratuita</a>
-
-    
-
-  </div>
-
-</div>
-
-<!-- SOBRE -->
-
-<div class="section">
-
-  <div class="title">Sobre as aulas</div>
-
-  <div class="about">
-
-    Aulas de Inglês com métodos Cambridge até ao secundário, também explicações de Português e Francês até 3º ciclo, tal como o Português para estrangeiros nivel iniciante e intermédio.<br><br>
-
-    Mais de 15 anos de experiência no ensino, incluindo trabalho em escolas na zona de Cascais.<br><br>
-
-    As explicações incluem gramática, escrita e expressão oral, com um plano adaptado a cada aluno.<br><br>
-
-    Sessões individuais ou em grupo, presenciais ou online.
-
-  </div>
-
-</div>
-
-<!-- DESTAQUE -->
-
-<div class="section">
-
-  <div class="highlight">
-
-    ✔ Aula experimental gratuita &nbsp;&nbsp; ✔ Horários flexíveis &nbsp;&nbsp; ✔ Acompanhamento personalizado
-
-  </div>
-
-</div>
-
-<!-- VANTAGENS -->
-
-<div class="section">
-
-  <div class="title">Vantagens</div>
-
-  <div class="grid">
-
-    <div class="card">
-
-      <strong>Todos os níveis</strong><br><br>
-
-      Ensino básico ao secundário
-
+    <!-- HERO -->
+    <div class="hero">
+        <div class="logo">Upexplica</div>
+        
+        <!-- FOTO DA PLACA (substitui pelo nome exato da tua imagem) -->
+        <img class="foto-placa" src="DDE2596E-A80F-482F-82DC-B17444F9F1BD.webp" alt="Aprenda inglês, português e francês">
+        
+        <p>Explicações de inglês, português e francês · Presencial e online</p>
+        <p>Do 1.º ao 12.º ano · Preparação para exames · Presencial ou online, à tua escolha</p>
+        <div class="cta">
+            <a class="btn btn-main" href="mailto:liliana.gv@hotmail.com">Marcar aula gratuita</a>
+        </div>
     </div>
 
-    <div class="card">
-
-      <strong>Método eficaz</strong><br><br>
-
-      Foco em resultados reais
-
+    <!-- CARTA DE APRESENTAÇÃO -->
+    <div class="section" style="background: #f9fcfb; padding: 40px; border-radius: 30px; margin-top: 30px;">
+        <div class="title">Quem sou eu</div>
+        <div style="max-width: 800px; margin: auto; text-align: center; line-height: 1.9; font-size: 1.1rem;">
+            <p><strong>Olá! Sou a Liliana,</strong> professora com mais de 10 anos de experiência no ensino de <strong>inglês, português e francês</strong>.</p>
+            <p>Trabalhei em escolas na zona de Cascais e sempre acreditei que cada aluno é único. As minhas aulas são dinâmicas, práticas e adaptadas ao ritmo de cada um – porque aprender uma língua deve ser <strong>motivador e eficaz</strong>.</p>
+            <p>📚 Preparação para exames nacionais, Cambridge, DELF e muito mais.<br>🗣️ Foco na comunicação oral e na confiança para falar sem medo.</p>
+            <p style="margin-top: 20px;"><strong>👉 Marca uma aula experimental gratuita e vem conhecer o meu método!</strong></p>
+        </div>
     </div>
 
-    <div class="card">
-
-      <strong>Experiência</strong><br><br>
-
-      +15 anos a ensinar
-
+    <!-- SOBRE AS AULAS -->
+    <div class="section">
+        <div class="title">Sobre as aulas</div>
+        <div class="about">
+            Aulas de Inglês com métodos Cambridge até ao secundário, também explicações de Português e Francês até 3º ciclo, tal como o Português para estrangeiros nível iniciante e intermédio.<br><br>
+            Mais de 15 anos de experiência no ensino, incluindo trabalho em escolas na zona de Cascais.<br><br>
+            As explicações incluem gramática, escrita e expressão oral, com um plano adaptado a cada aluno.<br><br>
+            Sessões individuais ou em grupo, presenciais ou online.
+        </div>
     </div>
 
-  </div>
+    <!-- DESTAQUES -->
+    <div class="section">
+        <div class="highlight">
+            ✔ Aula experimental gratuita &nbsp;&nbsp; ✔ Horários flexíveis &nbsp;&nbsp; ✔ Acompanhamento personalizado
+        </div>
+    </div>
 
+    <!-- VANTAGENS -->
+    <div class="section">
+        <div class="title">Vantagens</div>
+        <div class="grid">
+            <div class="card"><strong>Todos os níveis</strong><br><br>Ensino básico ao secundário</div>
+            <div class="card"><strong>Método eficaz</strong><br><br>Foco em resultados reais</div>
+            <div class="card"><strong>Experiência</strong><br><br>+15 anos a ensinar</div>
+        </div>
+    </div>
+
+    <!-- PREÇOS -->
+    <div class="section">
+        <div class="title">Preços hora</div>
+        <div class="grid">
+            <div class="card">1.º Ciclo<div class="price">10€</div></div>
+            <div class="card">2.º Ciclo<div class="price">14€</div></div>
+            <div class="card">3.º Ciclo<div class="price">15€</div></div>
+            <div class="card">Secundário<div class="price">20€</div></div>
+        </div>
+    </div>
+
+    <!-- CONTACTO -->
+    <div class="section">
+        <div class="contact">
+            <h2>Fala comigo</h2>
+            <p>Resposta rápida · Primeira aula gratuita</p>
+            <a class="btn" href="mailto:liliana.gv@hotmail.com">Enviar email</a>
+        </div>
+    </div>
 </div>
-
-<!-- PREÇOS -->
-
-<div class="section">
-
-  <div class="title">Preços hora</div>
-
-  <div class="grid">
-
-    <div class="card">1.º Ciclo<div class="price">10€</div></div>
-
-    <div class="card">2.º Ciclo<div class="price">14€</div></div>
-
-    <div class="card">3.º Ciclo<div class="price">15€</div></div>
-
-    <div class="card">Secundário<div class="price">20€</div></div>
-
-  </div>
-
-</div>
-
-<!-- CONTACTO -->
-
-<div class="section">
-
-  <div class="contact">
-
-    <h2>Fala comigo</h2>
-
-    <p>Resposta rápida · Primeira aula gratuita</p>
-
-    <a class="btn" href="mailto:liliana.gv@hotmail.com">Enviar email</a>
-
-  </div>
-
-</div>
-
-</div>
-
 </body>
-
 </html>
